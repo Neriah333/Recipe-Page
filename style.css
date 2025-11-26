@@ -5,5 +5,179 @@
 }
 
 body {
-  background-color: hsl(14, 45%, 36%);
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 700px;
+  margin: 30px 50px 30px 50px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 50%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.heading h1 {
+  padding: 10px;
+
+}
+
+.heading p {
+  padding: 10px;
+  
+}
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+  height: 170px;
+  padding: 10px;
+}
+
+.preparation h3 {
+  color: hsl(332, 51%, 32%);
+  padding: 10px;
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+
+}
+
+.preparation ul li {
+  padding: 5px;
+}
+
+.ingredients {
+  padding: 20px;
+}
+
+.ingredients h2 {
+  color: hsl(14, 45%, 36%);
+  padding: 10px;
+}
+
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.ingredients ul li {
+  padding: 5px;
+}
+
+.ingredients ul li::marker {
+  color: hsl(14, 45%, 36%);
+} 
+
+.instructions {
+ padding: 20px;
+}
+
+.instructions h2 {
+  color: hsl(14, 45%, 36%);
+  padding: 10px;
+}
+
+.instructions ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+}
+
+.instructions ol li {
+  padding: 5px;
+}
+
+.instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition {
+  padding: 20px;
+}
+
+.nutrition h2 {
+  color: hsl(14, 45%, 36%);
+  padding: 10px;
+}
+
+.nutrition p {
+  padding: 5px;
+}
+
+.nutrition table {
+  width: 100%; /* Ensures the table takes up the available width */
+   /* Optional: Sets a maximum width for the table */
+  border-collapse: collapse; /* Crucial for controlling table borders */
+  margin-top: 20px;
+}
+
+.nutrition tr {
+  /* Adds a light gray divider line at the bottom of each row */
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition table, th, td {
+  padding: 5px;
+  
+}
+
+/* Removes the border from the very last row */
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+/* Style for the second column (the value, e.g., '20g') */
+.nutrition tr td:last-child {
+  /* ... other styles ... */
+  color: hsl(14, 45%, 36%); /* This is the property that sets the color */
+  font-weight: bold;
 }
